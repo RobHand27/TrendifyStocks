@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>TrendifyStocks - Teaching How to Recognize Stock Patterns</title>
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='home.css') }}">
+    </head>
+    <body>
+        <header>
+            <nav class="sticky">
+                <div class="welcome-message">
+                    Welcome!
+                </div>            
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="{{ url_for('lessons') }}">Lessons</a></li>
+                    <li><a href="{{ url_for('practice') }}">Practice</a></li>
+                    <li><a href="#">              </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="orange-title">Welcome to TrendifyStocks!</h1>
+            <p class="subtitle">Here's an overview of your current progress...</p>
+            <p class="lessons">📝 Lessons Completed: 🟩 🟩 🟩 🟩 ⬛ ⬛ ⬛ ⬛ ⬛ ⬛  - 43.0 % </p>
+            <p class="stocks">📈 Total NASDAQ Stocks Discussed - 82  </p>
+            <p class="money">💵 Total Money Invested - $300 </p>
+        </main>
+    </body>
+</html>

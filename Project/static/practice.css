@@ -1,0 +1,183 @@
+body {
+    background-color: #e5e3e0f5;
+    color: #000000;
+    min-height: 1250px; /* Set a fixed height for the scrollable area */
+    overflow: auto; /* Enable scrolling when content exceeds the fixed height */
+}
+
+header {
+    background-color:#333; /* Nav Bar Color */
+    padding: 15px 0;
+}
+
+nav {
+    width: 85%;
+    padding:15px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 180px;
+    margin-right: -150px;
+}
+
+nav ul li {
+    margin: 0 50px;
+    white-space: nowrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-family: Verdana, sans-serif;
+}
+
+.orange-title {
+    text-align: center;
+    color: #fc7a00;
+    margin-top: 100px;
+    font-size: 36px;
+    font-family: Verdana, sans-serif;
+    margin-bottom: 0;
+    line-height: 1.5; 
+}
+
+.welcome-message {
+    display: none;
+    text-decoration: none;
+    font-size: 14px; /* Adjust the font size as needed */
+    color: #fff;
+    line-height: 50px; /* Align the text vertically with the profile picture */
+    font-size: 17px;
+    font-family: Verdana, sans-serif;
+    margin-left: 50px;
+}
+
+.apple {
+    text-align: left;
+    margin-top: 60px;
+    color: #000000;
+    font-size: 25px;
+    font-family: Verdana, sans-serif;
+    width: 33%; /* Adjust to make it one-third of the page width */
+    margin-left: 18%; /* Center the subtitle on the left third of the page */
+}
+
+.microsoft {
+    text-align: center;
+    margin-top: -55px;
+    color: #000000;
+    font-size: 25px;
+    font-family: Verdana, sans-serif;
+    width: 33%; /* Set to one-third of the page width */
+    margin-left: 33%; /* Center the subtitle horizontally within the middle third */
+}
+
+.amazon {
+    text-align: center;
+    margin-top: -55px;
+    color: #000000;
+    font-size: 25px;
+    font-family: Verdana, sans-serif;
+    width: 33%; /* Set to one-third of the page width */
+    margin-left: 66%;
+}
+
+.applelogo {
+    max-width: 325px; /* Set the maximum width */
+    height: auto;
+    margin-top: 15px;
+    margin-left: 85px;
+}
+
+.microsoftlogo {
+    max-width: 325px; /* Set the maximum width */
+    height: auto;
+    margin-left: 35px;
+}
+
+.amazonlogo {
+    max-width: 325px; /* Set the maximum width */
+    height: auto;
+    margin-left: 85px;
+}
+
+.facebook {
+    text-align: left;
+    color: #000000;
+    margin-top: 140px;
+    font-size: 25px;
+    font-family: Verdana, sans-serif;
+    margin-left: 27%;
+}
+
+.walmart {
+    text-align: right;
+    color: #000000;
+    margin-top: -55px;
+    font-size: 25px;
+    font-family: Verdana, sans-serif;
+    margin-right: 27%;
+}
+
+.facebooklogo {
+    margin-top: 50px;
+    max-width: 200px; /* Set the maximum width */
+    height: auto;
+    margin-left: 24%;
+}
+
+.walmartlogo {
+    max-width: 200px; /* Set the maximum width */
+    height: auto;
+    margin-left: 20%;
+}
+
+.button-container {
+    text-align: center; /* Center the buttons horizontally */
+    margin-top: 65px; /* Optional: Add some top margin */
+    display: flex; /* Make the container a flex container */
+}
+
+/* Adjust styles for the buttons */
+button {
+    height: 45px;
+    width: 150px; /* Adjust the width of the buttons */
+    margin: 0 200px; /* Adjust the margin to control the space between buttons */
+    font-family: Verdana, sans-serif;
+}
+
+/* Adjust the rightmost button's margin */
+button:last-child {
+    margin-right: 5px; /* Change this value to move the rightmost button to the right */
+}
+
+.new-button button {
+    height: 45px;
+    width: 150px;
+    margin: 0 10px;
+    font-family: Verdana, sans-serif;
+    /* Add any additional styles for the new buttons */
+}
+
+.new-button:first-child {
+    margin-left: 305px; /* Change this value to move the rightmost button to the right */
+}
+
+/* Center the new buttons horizontally */
+.new-button {
+    display: inline-block;
+    margin-top: 40px;
+    margin: 0 145px;
+    margin-bottom: 6%;
+}

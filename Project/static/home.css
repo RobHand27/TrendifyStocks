@@ -1,0 +1,92 @@
+body {
+    background-color: #e5e3e0f5; /* Page background color */
+    color: #000000; /* Text color */
+}
+
+header {
+    background-color:#333; /* Nav Bar Color */
+    padding: 15px 0;
+}
+
+nav {
+    width: 85%;
+    padding:15px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 180px;
+    margin-right: -150px;
+}
+
+nav ul li {
+    margin: 0 50px;
+    white-space: nowrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-family: Verdana, sans-serif;
+}
+
+.orange-title {
+    text-align: center;
+    color: #fc7a00;
+    margin-top: 100px;
+    font-size: 36px;
+    font-family: Verdana, sans-serif;
+    margin-bottom: 0;
+    line-height: 1.5; 
+}
+
+.welcome-message {
+    text-decoration: none;
+    font-size: 14px; /* Adjust the font size as needed */
+    color: #fff;
+    line-height: 50px; /* Align the text vertically with the profile picture */
+    font-size: 17px;
+    font-family: Verdana, sans-serif;
+}
+
+.subtitle {
+    margin-top: 40px;
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    font-family: Verdana, sans-serif;
+}
+
+.lessons {
+    margin-top: 50px;
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+    font-family: Verdana, sans-serif;
+}
+
+.stocks {
+    margin-top: 20px;
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+    font-family: Verdana, sans-serif;
+}
+
+.money {
+    margin-top: 30px;
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+    font-family: Verdana, sans-serif;
+}

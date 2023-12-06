@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="company.css">
+    <script src="company.js"></script>
+    <title>Company Information Quiz</title>
+</head>
+<body>
+    <header>
+        <nav class="sticky">
+            <img src="profilePic.jpg" alt="Profile Picture" class="profile-icon">
+            <div class="welcome-message">
+                Welcome, [Username]!
+            </div>            
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Lessons</a></li>
+                <li><a href="#">Practice</a></li>
+                <li><a href="#">Current Trends</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Math.Inc</h1>
+        <p class="history"> A Brief History:</p> 
+        <p>A group of mathematicians who have solved the world's most complex problems since 1898.</p>
+
+        <form id="quiz-form">
+            {% for i in range(8) %}
+                <h2>Q1: What is the famous answer to 9 + 10?</h2>
+
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="choice" value="choice1" data-correct="true" checked>
+                        21
+                    </label>
+                </div>
+
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="choice" value="choice2" data-correct="false">
+                        12
+                    </label>
+                </div>
+
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="choice" value="choice3" data-correct="false">
+                        19
+                    </label>
+                </div>
+
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="choice" value="choice4" data-correct="false">
+                        20
+                    </label>
+                </div>
+
+                <button type="button" class="submit-button" id="submit-button">Submit</button>
+            {% endfor %}
+        </form>
+
+        <div id="message" class="message-box"></div> <!-- Separate message box -->
+    </div>
+
+    <script src="company.js"></script> <!-- Include the JavaScript file -->
+</body>
+</html>

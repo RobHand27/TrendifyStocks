@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>TrendifyStocks - Lessons </title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='lessons.css') }}">
+    </head>
+    <body>
+        <header>
+            <nav class="sticky">
+                <div class="welcome-message">
+                    Welcome, [Username]!
+                </div>            
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="#">Lessons</a></li>
+                    <li><a href="{{ url_for('practice') }}">Practice</a></li>
+                    <li><a href="#">              </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="orange-title">Lessons</h1>
+
+            <div class = "inlineBlock"> 
+                <p class = "text">Apple</p>
+                <img src="../static/Apple-Logo.png" alt="Apple" class="logo">
+                <form method="POST" action="/lessonsfn">
+                    <!-- Apple Button -->
+                    <input type="hidden" name="lesson_type" value="Apple">
+                    <button type="submit">Learn About Apple!</button>
+                </form>
+            </div>
+            
+            <div class = "inlineBlock"> 
+                <p class = "text">Microsoft</p>
+                <img src="../static/microsoft.png" alt="Microsoft" class="logo">
+                <form method="POST" action="/lessonsfn">
+                    <!-- Microsoft Button -->
+                    <input type="hidden" name="lesson_type" value="Microsoft">
+                    <button type="submit" name="text" value="Microsoft">Learn About Microsoft!</button>
+                </form>
+            </div>
+
+            <div class = "inlineBlock"> 
+                <p class = "text">Amazon</p>
+                <img src="../static/Amazon_logo.svg.png" alt="Amazon" class="logo">
+                <form method="POST" action="/lessonsfn">
+                    <!-- Amazon Button -->
+                    <input type="hidden" name="lesson_type" value="Amazon">
+                    <button type="submit" name="text" value="Amazon">Learn About Amazon!</button>
+                </form>
+            </div>
+
+            <div class = "inlineBlock"> 
+                <p class = "text">Facebook</p>
+                <img src="../static/facebook.png" alt="Facebook" class="logo">
+                <form method="POST" action="/lessonsfn">
+                    <!-- Facebook Button -->
+                    <input type="hidden" name="lesson_type" value="Facebook">
+                    <button type="submit" name="text" value="Facebook">Learn About Facebook!</button>
+                </form>
+            </div>
+
+            <div class = "inlineBlock"> 
+                <p class = "text">Walmart</p>
+                <img src="../static/walmart.jpg" alt="Walmart" class="logo">
+                <form method="POST" action="/lessonsfn">
+                    <!-- Walmart Button -->
+                    <input type="hidden" name="lesson_type" value="Walmart">
+                    <button type="submit" name="text" value="Walmart">Learn About Walmart!</button>
+                </form>
+            </div>
+            
+        </main>
+    </body>
+</html>

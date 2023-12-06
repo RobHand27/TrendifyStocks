@@ -1,0 +1,106 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="company.css">
+    <script src="quiz.js"></script>
+    <title>Company Information Quiz</title>
+</head>
+<body>
+    <header>
+        <nav class="sticky">
+            <img src="profilePic.jpg" alt="Profile Picture" class="profile-icon">
+            <div class="welcome-message">
+                Welcome, [Username]!
+            </div>            
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Lessons</a></li>
+                <li><a href="#">Practice</a></li>
+                <li><a href="#">Current Trends</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>{{company}}</h1>
+
+        <form id="quiz-form">
+            {% for question in questions %}
+                <h2>Question: {{question.name}}</h2>
+
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="choice" value="choice1" data-correct="true" checked>
+                        {{question.A}}
+                    </label>
+                </div>
+
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="choice" value="choice2" data-correct="false">
+                        {{question.B}}
+                    </label>
+                </div>
+
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="choice" value="choice3" data-correct="false">
+                        {{question.C}}
+                    </label>
+                </div>
+
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="choice" value="choice4" data-correct="false">
+                        {{question.D}}
+                    </label>
+                </div>
+
+                <button type="button" class="submit-button" id="submit-button">Submit</button>
+            {% endfor %}
+        </form>
+
+        <div id="message" class="message-box"></div> <!-- Separate message box -->
+    </div>
+
+    <script src="company.js"></script> <!-- Include the JavaScript file -->
+</body>
+=======
+<html>
+    <head>
+        <title>TrendifyStocks - Lessons </title>
+        <link rel="stylesheet" type="text/css" href="lessons.css">
+    </head>
+    <body>
+        <header>
+            <nav class="sticky">
+                <img src="profilePic.jpg" alt="Profile Picture" class="profile-icon">
+                <div class="welcome-message">
+                    Welcome, [Username]!
+                </div>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Lessons</a></li>
+                    <li><a href="practice.html">Practice</a></li>
+                    <li><a href="#">Current Trends</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="orange-title">Lessons</h1>
+            <p class="apple">Apple</p>
+            <p class="microsoft">Microsoft</p>
+            <p class="amazon">Amazon</p>
+            <img src="apple.jpg" alt="Apple" class="applelogo">
+            <img src="microsoft.png" alt="Microsoft" class="microsoftlogo">
+            <img src="amazon.png" alt="Amazon" class="amazonlogo">
+            <p class="facebook">Facebook</p>
+            <p class="walmart">Walmart</p>
+            <img src="facebook.png" alt="Facebook" class="facebooklogo">
+            <img src="walmart.jpg" alt="Walmart" class="walmartlogo">
+        </main>
+    </body>
+>>>>>>> 1681f7a4e3922e45822ea6170b31f427cbef1702
+</html>
